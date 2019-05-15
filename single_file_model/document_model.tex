@@ -1,0 +1,131 @@
+\documentclass[hyperref,UTF8,12px,a4paper]{ctexart} % use larger type; default would be 10pt
+%a4paper: width = 17cm
+
+% \usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% PAGE DIMENSIONS
+\usepackage[margin=1in]{geometry} % to change the page dimensions
+%\geometry{a4paper} or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+\usepackage{xeCJK}
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{abstract} % for abstract
+\usepackage{amsmath}
+\usepackage{booktabs} % for much better looking tables
+\usepackage{cite} % reference
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfigure} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+\usepackage{cases} %equation set
+\usepackage{multirow} %use table
+\usepackage{lastpage} %get the total page
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{enumerate}
+\usepackage{wrapfig}
+\usepackage{comment} % comment for more than one line
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=black,anchorcolor=black,citecolor=black,
+pdfstartview=FitH,bookmarksnumbered=true,bookmarksopen=true,} % set href in tex & pdf
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.5pt} % customise the layout...
+\renewcommand{\footrulewidth}{0.5pt}
+\lhead{}\chead{学号：xxx\quad 姓名：yyy}\rhead{}
+\lfoot{}\cfoot{第 \thepage 页，共 \pageref{LastPage} 页}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+\numberwithin{equation}{section} %formed the equation number as (1.1)...
+\renewcommand\contentsname{\heiti 目录}
+\renewcommand\refname{\heiti 参考文献}
+%%% ToC (table of contents) APPEARANCE
+\usepackage[notlot,notlof]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+%\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+%\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\title{作业}
+\author{first\\
+second}
+%\date{} Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed
+
+\begin{document}
+\maketitle
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=4.5cm,height=7.5cm]{nkbackground.png}
+\end{figure}
+\thispagestyle{fancy} % set the page style of the first page
+
+{\noindent \Large \heiti 摘要}\\
+% Chinese abstract
+\par
+{\noindent \Large \textbf{Abstract}}\\
+% English abstract
+\par
+{\noindent \Large \heiti 关键词}\\
+% Chinese keywords
+\par
+{\noindent \Large \textbf{Keywords}}\\
+% English keywords
+\section{第一章}
+\subsection{第一节}
+% \tableofcontents
+\newpage
+\begin{figure}[!htb]
+	\centering
+    \includegraphics[width=12cm]{nkbackground.png}
+    \caption{设计草图 by xxx}
+\end{figure}
+
+\begin{description}
+    \item[抗摔耐用] 1m抗摔，在精度前提下考虑防护
+    \item[两次注胶] 对模具不仅进行初注胶，而且进行重复加工软注胶
+    \item[精度更强] 全铝合金传感器，并进行黑体校准
+    \item[蜂鸣报警] 超过量程时进行蜂鸣报警
+    \item[屏幕显示] 我们可以显示最大值（MAX），最小值（MIN），最多存储数据（STO），高温预警（HAL），低温预警（LAL），发射率设置（EMS），平均值（AVG），基本满足民用需求
+\end{description}
+
+\newpage
+\begin{figure}[!htb]
+	\centering
+    \includegraphics[width=15cm]{nkbackground.png}
+    \caption{设计草图 by yyy}
+\end{figure}
+
+\newpage
+\begin{figure}[!htb]
+	\centering
+    \includegraphics[width=15cm]{nkbackground.png}
+    \caption{设计草图 by zzz}
+\end{figure}
+
+\begin{comment}
+\begin{itemize}
+    \item 加入激光指示，远距离自动放大激光点大小
+    \item 握柄采用流线型设计
+    \item 过一段时间后可以自动关机
+\end{itemize}
+\end{comment}
+\end{document}

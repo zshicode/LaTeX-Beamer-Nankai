@@ -1,0 +1,257 @@
+\documentclass[hyperref,UTF8,11pt]{beamer}
+\usepackage{ctex}
+\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+\usepackage{comment}
+%\setCJKfamilyfont{SimHei}
+\usepackage{xeCJK}
+%\renewcommand{\CJKfamilydefault}{\CJKsfdefault}
+%\setmonofont{Consolas}
+\setsansfont{Microsoft YaHei}
+\setCJKmainfont{Microsoft YaHei}
+%\setCJKmonofont{KaiTi}
+%\setCJKsansfont{Microsoft YaHei}
+\usefonttheme{professionalfonts}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\graphicspath{{image/}} % storage figure in a sub-folder
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+%\usepackage{epstopdf}
+\usepackage{bm}
+\usepackage{nkcolor}
+%\usepackage{hyperref}
+\hypersetup{CJKbookmarks=true}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amsthm}
+%\theoremstyle{definition}
+%\newtheorem{theorem}{定理}
+%\newtheorem{definition}{定义}
+%\newtheorem{corollary}{推论}
+%\newtheorem{example}{例}
+\usepackage{booktabs} % for much better looking tables
+%\usepackage{cite} % reference
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+%\usepackage[backend=biber,style=apalike]{biblatex}
+%\usepackage[backend=biber,style=authoryear]{biblatex}
+% if style=apalike or authoryear, use \parencite instead of \cite
+\addbibresource{nkthesis.bib}
+\beamertemplatetextbibitems
+\usepackage{array} % for better arrays (eg matrices) in maths
+%\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfigure} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+%\usepackage{threeparttable}
+\usepackage{cases} %equation set
+\usepackage{multirow} %use table
+\usepackage{enumerate}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{xcolor}
+%\usepackage{capt-of}
+\setcounter{tocdepth}{1}%只显示section，不显示subsection
+\usepackage{listings}
+\lstset{tabsize=4, keepspaces=true,
+    xleftmargin=2em,xrightmargin=0em, aboveskip=1em,
+    backgroundcolor=\color{gray!20},  % 定义背景颜色
+    frame=none,                       % 表示不要边框
+    extendedchars=false,              % 解决代码跨页时，章节标题，页眉等汉字不显示的问题
+    numberstyle=\ttfamily,
+    basicstyle=\ttfamily,
+    keywordstyle=\color{blue}\bfseries,
+    breakindent=10pt,
+    identifierstyle=,                 % nothing happens
+    commentstyle=\color{green}\small,  % 注释的设置
+    morecomment=[l][\color{green}]{\#},
+    numbers=left,stepnumber=1,numberstyle=\scriptsize,
+    showstringspaces=false,
+    showspaces=false,
+    flexiblecolumns=true,
+    breaklines=true, breakautoindent=true,breakindent=4em,
+    escapeinside={/*@}{@*/},
+}
+
+\title[Beamer模板]{中文题目}
+\subtitle{English Title}
+\author[作者]{答辩人：\quad \\ 学号：\quad  \\ 专业：\quad \\ 指导教师：\quad \\\quad}
+\institute[学院]{南开大学 \quad 学院}
+\date{2019年5月} %Activate to display a given date or no date (if empty),
+% otherwise the current date is printed
+
+\begin{document}
+%%%%%%%%%% 定理类环境的定义 %%%%%%%%%%
+%% 必须在导入中文环境之后
+\newcommand{\redstress}[1]{{\color{red}{#1}}}
+%\renewcommand{\raggedright}{\leftskip=0pt \rightskip=0pt plus 0cm}
+\renewcommand{\contentsname}{目录}     % 将Contents改为目录
+\renewcommand{\abstractname}{摘要}     % 将Abstract改为摘要
+\renewcommand{\refname}{参考文献}      % 将References改为参考文献
+\renewcommand{\indexname}{索引}
+\renewcommand{\figurename}{图}
+\renewcommand{\tablename}{表}
+\renewcommand{\appendixname}{附录}
+%\renewcommand{\proofname}{证明}
+%\renewcommand{\algorithm}{算法}
+%----------------------------------------------------------------------
+% Title frame
+\begin{frame}
+\maketitle
+\end{frame}
+
+\section{绪论}
+
+\begin{frame}{Frametitle}
+    \begin{itemize}
+        \item First
+        \item Second
+        \item ...
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Block}
+    \begin{block}{Part 1}
+        Test.
+    \end{block}
+    \begin{theorem}[Thm 1]
+        Thm.
+    \end{theorem}
+    \begin{proof}
+        Bingo.
+    \end{proof}
+\end{frame}
+
+\begin{frame}{Enumerate}
+    \begin{equation}
+        F=ma\label{eq1}
+    \end{equation}
+    \begin{enumerate}
+        \item First \redstress{important\cite{em1977}}
+        \item Second \eqref{eq1}
+    \end{enumerate}
+\end{frame}
+
+\begin{comment}
+
+This is comment.
+
+\end{comment}
+
+\section{算法}
+
+\begin{frame}{算法}
+    \begin{algorithm}[H]
+        \caption{算法1}\label{alg:em}
+        \begin{algorithmic}[1]
+            \REQUIRE Param
+            \ENSURE $a$
+            \REPEAT
+            \STATE Compute $a_n$
+            \UNTIL convergence
+            \RETURN $a\leftarrow a_n$
+        \end{algorithmic}
+    \end{algorithm}    
+\end{frame}
+
+\begin{frame}{图片}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.85\textwidth]{nk_logo.png}
+        \caption{南开大学}\label{fig:nk}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{分栏}
+    \begin{columns}
+        \begin{column}{0.3\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.95\textwidth]{nk_logo.png}
+                \caption{NKU}\label{fig:nku}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.7\textwidth}
+            \begin{itemize}
+                \item ...
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Subfigure}
+    \begin{figure}
+        \centering
+        \subfigure[]{\includegraphics[width=0.47\textwidth]{nk_logo.png}}
+        \subfigure[]{\includegraphics[width=0.47\textwidth]{nkbackground.png}}
+        \caption{Subfigure\footnote{See: \url{www.nankai.edu.cn}}}\label{fig:rnn}
+    \end{figure}
+\end{frame}
+
+% To put the content of a frame in several pages, use allowframebreaks
+\begin{frame}[allowframebreaks]
+    \frametitle{Longframe}
+    \begin{itemize}
+        \item ...
+    \end{itemize}
+\end{frame}
+
+\section{仿真}
+
+\begin{frame}{More block}
+    \begin{exampleblock}{Example}
+    Eg1.
+    \end{exampleblock}
+    \begin{alertblock}{Attention}
+        Test block!
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}{表格}
+    \begin{table}[]
+        \centering
+        \caption{数据}
+        \label{tab1}
+        \begin{tabular}{@{}ccccc@{}}
+        \toprule
+                    & $q$         & $r$         & $a$ & $p$           \\ \midrule
+        实际值         & $1$  & $5$  & 2   & 3  \\
+        方法1          & $4$ & $3$ & 1 & 1\\
+        方法2        & $4$ & $3$ & 2 & 2\\
+        方法3 & $5$ & $2$ & 3 & 3\\
+        方法4          & $4$ & $2$ & 2 & 2\\ \bottomrule
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{代码}
+    \begin{lstlisting}[language=java]
+public class Hello{
+    public static void main(String args[]){
+        System.out.println("hello,world");
+    }
+}\end{lstlisting}
+\end{frame}
+
+\section{总结与展望}
+
+\begin{frame}{结论}
+    \begin{description}
+        \item[I] First of all
+        \item[II] Besides
+        \item[III] Last but not least
+    \end{description}
+\end{frame}
+
+\begin{frame}{致谢}
+    \begin{block}{致谢}
+        谢谢大家。
+    \end{block}
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+    \frametitle{参考文献}
+    \printbibliography
+\end{frame}
+
+\end{document}
