@@ -1,7 +1,7 @@
 # Beamer-Style-of-NKU
 南开大学LaTeX-beamer幻灯片模板
 <br/>
-## An Unofficial LaTeX beamer style for Nankai University
+## LaTeX beamer style for Nankai University
 
 [LaTeX beamer style for Nankai University](./beamer_nankai)
 1. This is an unofficial LaTeX beamer style for Nankai University, the style file is `nkcolor.sty` and the example file is `slides.tex`.
