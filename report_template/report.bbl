@@ -1,0 +1,58 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{wilson2019learning}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=04edb06b8e1af2834f66b3def5bda252}{%
+           family={Wilson},
+           familyi={W\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=df5c7be0d6c5dc6449c492d247987636}{%
+           family={Hermans},
+           familyi={H\bibinitperiod},
+           given={Tucker},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{833c92c687b7b32a122185989f0f741b}
+      \strng{fullhash}{833c92c687b7b32a122185989f0f741b}
+      \strng{bibnamehash}{833c92c687b7b32a122185989f0f741b}
+      \strng{authorbibnamehash}{833c92c687b7b32a122185989f0f741b}
+      \strng{authornamehash}{833c92c687b7b32a122185989f0f741b}
+      \strng{authorfullhash}{833c92c687b7b32a122185989f0f741b}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{3rd Conference on Robot Learning}
+      \field{title}{Learning to Manipulate Object Collections Using Grounded State Representations}
+      \field{usera}{C}
+      \field{userd}{L}
+      \field{usere}{Matthew Wilson and Tucker Hermans}
+      \field{userf}{Matthew Wilson and Tucker Hermans}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \keyw{wilson2019learning}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

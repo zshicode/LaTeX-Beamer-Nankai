@@ -1,0 +1,18 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}课程理解}{1}{chapter.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}实验目的}{1}{section.1.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}知识点总结}{2}{chapter.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}空间描述与变换}{2}{section.2.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}总结与展望}{3}{chapter.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}深度学习方法在机械臂控制中的应用}{3}{section.3.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}第一部分}{5}{appendix.A}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}第二部分}{6}{appendix.B}% 
+\contentsfinish 
