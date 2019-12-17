@@ -1,6 +1,12 @@
 # Beamer-Style-of-NKU
 南开大学LaTeX-beamer幻灯片模板
+
+Dec, 17th, 2019 增加：南开大学课程报告模板，可用于课程大作业的报告撰写等
+
+两个模板对在LaTeX中常用的格式，包括itemize, enumerate, description, 图片，表格，代码，伪代码等等，都给出了示例。
+
 <br/>
+
 ## LaTeX beamer style for Nankai University
 
 [LaTeX beamer style for Nankai University](./beamer_nankai)
@@ -17,6 +23,11 @@ xelatex slides
 ```
 and you can get the PDF.
 <br/>
+
+## Report Template
+
+
+
 ## Others
 
 As you have noticed, other LaTeX styles or even Markdown styles are also included in the folder [single_file_model](./single_file_model), such as `typora_monokai.css`, `document_model.tex`, `warsaw_beamer_model.tex`. They are single, simple and basic. The `deepblue.sty` is a LaTeX beamer style based on `nkcolor.sty`, but I don't use an image as background or logo in this style, and the theme color is deep blue.
