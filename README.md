@@ -5,6 +5,8 @@ Dec, 17th, 2019 增加：南开大学课程报告模板，可用于课程大作�
 
 两个模板对在LaTeX中常用的格式，包括itemize, enumerate, description, 图片，表格，代码，伪代码等等，都给出了示例。
 
+两个模板都支持以gb7714-2015标准所规定的格式排版参考文献。
+
 <br/>
 
 ## LaTeX beamer style for Nankai University
@@ -26,7 +28,16 @@ and you can get the PDF.
 
 ## Report Template
 
+[Report Template](./report_template)
 
+To compile the report, use:
+```
+xelatex report
+biber report
+xelatex report
+xelatex report
+```
+and you can get the PDF.
 
 ## Others
 
