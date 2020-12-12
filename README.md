@@ -1,7 +1,9 @@
 # Beamer-Style-of-NKU
 南开大学LaTeX-beamer幻灯片模板
 
-Dec, 17th, 2019 增加：南开大学课程报告模板，可用于课程大作业的报告撰写等
+December, 17, 2019 增加：南开大学课程报告模板，可用于课程大作业的报告撰写等
+
+December, 12, 2020 增加：可将beamer的幻灯片显示比例由4:3调整至16:9（默认为4:3）
 
 两个模板对在LaTeX中常用的格式，包括itemize, enumerate, description, 图片，表格，代码，伪代码等等，都给出了示例。
 
@@ -25,6 +27,11 @@ xelatex slides
 ```
 and you can get the PDF.
 <br/>
+
+The default aspect ratio of beamer page is 4:3, while you can change it into 16:9 by using
+```
+\documentclass[hyperref,UTF8,11pt,aspectratio=169]{beamer}
+```
 
 ## Report Template
 
