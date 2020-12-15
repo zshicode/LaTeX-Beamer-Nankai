@@ -1,0 +1,166 @@
+\documentclass[hyperref,UTF8,11px,a4paper]{article} % use larger type; default would be 10pt
+%a4paper: width = 17cm
+\usepackage{ctex}
+%\usepackage{xeCJK}
+%\usepackage[utf8]{inputenc}set input encoding (not needed with XeLaTeX)
+
+%%% PAGE DIMENSIONS
+\usepackage[margin=1in]{geometry} % to change the page dimensions
+%\geometry{a4paper} or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+\usepackage{color}
+\usepackage{graphicx} % support the \includegraphics command and options
+\graphicspath{{fig/}} % storage figure in a sub-folder
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+%\setmonofont{Courier New}
+%%% PACKAGES
+\usepackage{abstract} % for abstract
+\usepackage{amsmath}
+\usepackage{amsthm}
+\newtheorem{theorem}{定理}
+\newtheorem{defn}{定义}
+% \newtheorem{corollary}{推论}
+% \newtheorem{example}{例}
+\usepackage{amsfonts}
+%\usepackage[bb=boondox]{mathalfa}
+\usepackage{amssymb}
+%\usepackage{mathrsfs}
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{%colorlinks,linkcolor=black,anchorcolor=black,
+citecolor=blue,
+pdfstartview=FitH,bookmarksnumbered=true,bookmarksopen=true,} % set href in tex & pdf
+\usepackage{booktabs} % for much better looking tables
+%\usepackage{cite} % reference
+\usepackage[authoryear,round]{natbib}
+\renewcommand{\bibsection}{References}
+% \usepackage[hyperref=true,backend=biber,style=authoryear]{biblatex}
+% \addbibresource{reference.bib}
+% \defbibheading{bibliography}[\refname]{\section*{参考文献}}
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfigure} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+\usepackage{cases} %equation set
+\usepackage{multirow} %use table
+\usepackage{lastpage} %get the total page
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\renewcommand{\algorithmicrequire}{ \textbf{Input:}}      %Use Input in the format of Algorithm
+\renewcommand{\algorithmicensure}{ \textbf{Output:}}     %UseOutput in the format of Algorithm
+\usepackage{comment} % comment for more than one line
+\usepackage{listings}
+\lstset{tabsize=4, keepspaces=true,
+    xleftmargin=2em,xrightmargin=0em, aboveskip=1em,
+    %backgroundcolor=\color{gray!20},  % 定义背景颜色
+    frame=none,                       % 表示不要边框
+    extendedchars=false,              % 解决代码跨页时，章节标题，页眉等汉字不显示的问题
+    numberstyle=\ttfamily,
+    basicstyle=\ttfamily,
+    keywordstyle=\color{blue}\bfseries,
+    breakindent=10pt,
+    identifierstyle=,                 % nothing happens
+    commentstyle=\color{green}\small,  % 注释的设置
+    morecomment=[l][\color{green}]{\#},
+    numbers=left,stepnumber=1,numberstyle=\scriptsize,
+    showstringspaces=false,
+    showspaces=false,
+    flexiblecolumns=true,
+    breaklines=true, breakautoindent=true,breakindent=4em,
+    escapeinside={/*@}{@*/},
+}
+
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\fancyhf{}
+%in xelatex use:
+%\lhead{\small{学号：2120190352}}\chead{ \quad }\rhead{\small{姓名：石壮威}}
+\lfoot{}\cfoot{\small{第 \thepage 页，共 \pageref{LastPage} 页}}\rfoot{}
+\renewcommand{\headrulewidth}{0.5pt} % customise the layout...
+\renewcommand{\footrulewidth}{0.5pt}
+%\usepackage{float}
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+%\numberwithin{equation}{section} %formed the equation number as (1.1)...
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[notlot,notlof]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+%\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+%\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%\renewcommend\tableofcontents{\heiti 目录}
+\renewcommand{\figurename}{图} 
+\renewcommand{\tablename}{表}
+\renewcommand{\contentsname}{\heiti 目录}
+\renewcommand{\bibname}{\heiti 参考文献}
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\title{算法}
+\author{XXX}
+\date{2020年6月20日} 
+%Activate to display a given date or no date (if empty),
+% otherwise the current date is printed
+
+\begin{document}
+\maketitle
+\thispagestyle{fancy} % set the page style of the first page
+
+\section{深度学习}
+
+\subsection{聚类}
+
+Clustering is a fundamental task in data analysis. Motivated by the great success of Graph Convolutional Network (GCN) in encoding the graph structure, \citet{sdcn2020} propose a {\color{red} Structural Deep Clustering Network} (SDCN) to integrate the structural information into deep clustering. 
+
+实验\footnote{代码见\url{https://github.com}}，数据如表\ref{tab:gc}所示。
+
+\begin{table}[]
+    \centering
+    \caption{分类准确率}
+    \label{tab:gc}
+    \begin{tabular}{@{}ccccc@{}}
+    \toprule
+          & 训练集样本数 & 测试集样本数 & AUROC & AUPR \\ \midrule
+    -  & - & - & - & - \\
+    -  & - & - & - & - \\
+    -  & - & - & - & - \\
+    -  & - & - & - & - \\ \bottomrule
+    \end{tabular}
+\end{table}
+
+\texttt{Dataset}
+
+写作
+\begin{equation}
+	\begin{split}
+		H&=W_1X\\
+		Y&=W_2H\\
+		Z&=W_3Y
+	\end{split}
+\end{equation}
+
+\begin{align}
+    L&=C_1\\
+	&=-C_2\\
+	&=-C_3
+\end{align}
+
+\begin{align}
+    L=C_4
+\end{align}
+
+\bibliographystyle{plainnat}
+\bibliography{recent}
+
+\end{document}
