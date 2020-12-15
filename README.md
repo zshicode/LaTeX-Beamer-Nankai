@@ -55,7 +55,7 @@ and you can get the PDF.
 
 ## Others
 
-As you have noticed, other LaTeX styles or even Markdown styles are also included in the folder [single_file_model](./single_file_model), such as `typora_monokai.css`, `document_model.tex`, `warsaw_beamer_model.tex`. They are single, simple and basic. The `deepblue.sty` is a LaTeX beamer style based on `nkcolor.sty`, but I don't use an image as background or logo in this style, and the theme color is deep blue.
+As you have noticed, other LaTeX styles or even Markdown styles are also included in the folder [single_file_model](./single_file_model), such as `typora_monokai.css`, `document_model.tex`, `warsaw_beamer_model.tex` and `recent.tex` (with `recent.bib`). They are single, simple and basic. The `deepblue.sty` is a LaTeX beamer style based on `nkcolor.sty`, but I don't use an image as background or logo in this style, and the theme color is deep blue.
 
 [A LaTeX theme of Python](./python_theme_beamer) is also available. The `pycolor.sty`, and the example of using this style is given by `pyeg.tex`. This file use the `pythonhighlight.sty`, the package is loaded by the following line:
 
