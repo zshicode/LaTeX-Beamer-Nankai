@@ -2,11 +2,11 @@
 
 南开大学LaTeX-beamer幻灯片模板
 
-October, 17, 2019 （南开大学百年校庆纪念版）对幻灯片排版和背景图做了进一步美化
+October 17, 2019 （南开大学百年校庆纪念版）对幻灯片排版和背景图做了进一步美化
 
-December, 17, 2019 增加：南开大学课程报告模板，可用于课程大作业的报告撰写等
+December 17, 2019 增加：南开大学课程报告模板，可用于课程大作业的报告撰写等
 
-December, 12, 2020 增加：
+December 12, 2020 增加：
 - 可将beamer的幻灯片显示比例由4:3调整至16:9（默认为4:3）
 - 添加`slides-authoryear.tex`，可将参考文献格式由数字格式改为作者-年份格式。
 
@@ -21,7 +21,7 @@ December, 12, 2020 增加：
 [LaTeX beamer style for Nankai University](./beamer_nankai)
 1. This is an unofficial LaTeX beamer style for Nankai University, the style file is `nkcolor.sty` and the example file is `slides.tex`.
 2. These files are initially based on [Edward Hartley's work](http://www-control.eng.cam.ac.uk/Main/EdwardHartley), and [@teancake](https://github.com/teancake) from BUAA(Beihang University, 北京航空航天大学) gave a [Beihang version Beamer style](https://github.com/teancake/latex-beamer-beihang) from that work.
-3. Link to Thesis Templates：[南开大学本科生毕业论文LaTeX模板](https://github.com/kongxiao0532/NKU_Bachelor_Thesis_Template)，[南开大学硕博毕业论文LaTeX模板](https://github.com/NewFuture/NKThesis)
+3. Link to Thesis Templates：[南开大学本科生毕业论文LaTeX模板](https://github.com/kongxiao0532/NKU_Bachelor_Thesis_Template), [南开大学硕博毕业论文LaTeX模板](https://github.com/NewFuture/NKThesis), [南开大学硕博毕业论文LaTeX模板（overleaf版）](https://cn.overleaf.com/read/hvcpznzvwncy)
 
 To compile the slides, use:
 ```
