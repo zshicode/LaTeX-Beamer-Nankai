@@ -21,7 +21,10 @@ December 12, 2020 增加：
 [LaTeX beamer style for Nankai University](./beamer_nankai)
 1. This is an unofficial LaTeX beamer style for Nankai University, the style file is `nkcolor.sty` and the example file is `slides.tex`.
 2. These files are initially based on [Edward Hartley's work](http://www-control.eng.cam.ac.uk/Main/EdwardHartley), and [@teancake](https://github.com/teancake) from BUAA(Beihang University, 北京航空航天大学) gave a [Beihang version Beamer style](https://github.com/teancake/latex-beamer-beihang) from that work.
-3. Link to Thesis Templates：[南开大学本科生毕业论文LaTeX模板](https://github.com/kongxiao0532/NKU_Bachelor_Thesis_Template), [南开大学硕博毕业论文LaTeX模板](https://github.com/NewFuture/NKThesis), [南开大学硕博毕业论文LaTeX模板（overleaf版）](https://cn.overleaf.com/read/hvcpznzvwncy)
+3. Link to Thesis Templates:
+    - [南开大学本科生毕业论文LaTeX模板](https://github.com/kongxiao0532/NKU_Bachelor_Thesis_Template)
+    - [南开大学硕博毕业论文LaTeX模板](https://github.com/NewFuture/NKThesis)
+    - [南开大学硕博毕业论文LaTeX模板（overleaf版）](https://cn.overleaf.com/read/hvcpznzvwncy)
 
 To compile the slides, use:
 ```
